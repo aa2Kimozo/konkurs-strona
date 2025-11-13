@@ -1,0 +1,179 @@
+        body {
+            background: linear-gradient(135deg, #0b0b0c 0%, #151515 100%);
+            color: #e0e0e0;
+            font-family: "Segoe UI", Roboto, sans-serif;
+            margin: 0;
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        #top {
+            background-color: #1a1a1a;
+            border-radius: 20px;
+            padding: 40px 60px;
+            box-shadow: 0 0 25px rgba(0, 255, 120, 0.15);
+            max-width: 700px;
+            width: 90%;
+            text-align: center;
+        }
+
+        h1 {
+            font-size: 2rem;
+            color: #00ff99;
+            margin-bottom: 25px;
+            letter-spacing: 1px;
+            text-shadow: 0 0 10px rgba(0, 255, 153, 0.3);
+        }
+
+        #problab {
+            display: block;
+            font-weight: bold;
+            color: #ff0000;
+            margin: 20px 0 10px 0;
+            font-size: 1.1rem;
+            letter-spacing: 0.5px;
+        }
+        #rozwlab {
+            display: block;
+            font-weight: bold;
+            color: #00ffcc;
+            margin: 20px 0 10px 0;
+            font-size: 1.1rem;
+            letter-spacing: 0.5px;
+        }
+        
+
+        ul {
+            list-style: none;
+            padding: 0;
+            margin: 0 auto 25px;
+            max-width: 500px;
+            text-align: left;
+        }
+
+        ul li {
+            background: rgba(255, 255, 255, 0.03);
+            border-left: 4px solid #00ff99;
+            margin-bottom: 10px;
+            padding: 10px 15px;
+            border-radius: 10px;
+            position: relative;
+            transition: all 0.3s ease;
+        }
+
+        #prob li::before {
+            content: "❗";
+            position: absolute;
+            left: -28px;
+            color: #00ff99;
+            font-size: 1.2rem;
+            top: 50%;
+            transform: translateY(-50%);
+            opacity: 0.8;
+            box-shadow: 0 0 15px rgba(153, 1, 1, 0.719);
+        }
+        #rozw li::before {
+            content: "✅";
+            position: absolute;
+            left: -28px;
+            color: #00ff99;
+            font-size: 1.2rem;
+            top: 50%;
+            transform: translateY(-50%);
+            opacity: 0.8;
+            box-shadow: 0 0 15px rgba(6, 153, 1, 0.719);
+        }
+
+
+        #prob li:hover {
+            background: rgba(255, 0, 0, 0.1);
+            transform: translateX(4px);
+            border-left-color: #ff0000;
+            box-shadow: 0 0 15px rgba(153, 1, 1, 0.719);
+        }
+        #rozw li:hover {
+            background: rgba(0, 255, 153, 0.1);
+            transform: translateX(4px);
+            border-left-color: #00ffaa;
+            box-shadow: 0 0 15px rgba(6, 153, 1, 0.719);
+        }
+
+        #mid {
+            margin-top: 40px;
+        }
+
+        @media (max-width: 600px) {
+            #top {
+                padding: 25px;
+            }
+
+            h1 {
+                font-size: 1.6rem;
+            }
+        }
+#prob li {
+  display: flex;             
+  align-items: center;       
+  justify-content: space-between; 
+  padding: 10px 15px;
+  background: rgba(255, 255, 255, 0.03);
+  border-left: 4px solid #ff0000;
+  border-radius: 10px;
+  margin-bottom: 10px;
+  position: relative;
+}
+
+#prob li::before {
+  content: "❗";
+  margin-right: 10px;
+  color: #00ff99;
+  font-size: 1.2rem;
+}
+
+#info, #info2 {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: rgba(172, 57, 57, 0.767);
+  color: #222831;
+  font-size: 1.2rem;
+  font-weight: bold;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 0 8px rgba(153, 1, 1, 0.719);
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+#info:hover, #info2:hover {
+  transform: scale(1.2);
+  box-shadow: 0 0 15px rgba(172, 57, 57, 0.767);
+}
+#powrot {
+  width: 30px;             
+  height: 30px;
+  border-radius: 50%;
+  background-color: #fff;
+  color: #000;              
+  font-size: 1.2rem;
+  font-weight: bold;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 0 8px rgba(0,0,0,0.5); 
+  position: absolute;       
+  top: 10px;
+  right: 10px;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+#powrot:hover {
+  transform: scale(1.2);
+  box-shadow: 0 0 15px rgba(0,0,0,0.7);
+}
